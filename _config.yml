@@ -2,3 +2,5 @@ name: Bryn Taylor | Personal Style Management
 markdown: redcarpet
 pygments: true
 google_analytics_id: UA-XXXXXXXXX
+url: http://bryntaylorstyle.com
+description: "hello, what's up"
