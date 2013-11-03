@@ -73,6 +73,13 @@ function flexsliderInit(el) {
     }
   });
 
+  //home intro toggle
+  $('.learn-more-intro').click(function (event) {
+    event.preventDefault();
+    $(this).siblings('.content-extra').addClass('show');
+    $(this).addClass('hide');
+  });
+
   //services toggle
   $('.services-content-toggle').click(function (event) {
     event.preventDefault();
@@ -94,8 +101,6 @@ function flexsliderInit(el) {
     if (player.getPlayerState() == 1) {
       console.log(player.getPlayerState());
       stopVideo();
-    } else {
-      setTimeout(playVideo, 1500);
     }
 
     $('.video-container').toggleClass('show').fitVids();

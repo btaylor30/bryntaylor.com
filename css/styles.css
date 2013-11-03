@@ -385,12 +385,21 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 52em) {
       .home-intro__content p {
         padding: 0; } }
-  .home-intro__content a {
+  .home-intro__content a, .home-intro__content .learn-more-intro {
     color: #333333;
-    text-decoration: underline; }
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-size: .8em; }
     @media screen and (min-width: 52em) {
-      .home-intro__content a {
+      .home-intro__content a, .home-intro__content .learn-more-intro {
         color: white; } }
+    .home-intro__content a.hide, .home-intro__content .learn-more-intro.hide {
+      display: none; }
+  .home-intro__content .content-extra {
+    display: none; }
+    .home-intro__content .content-extra.show {
+      display: inline; }
 
 .services {
   *zoom: 1;
