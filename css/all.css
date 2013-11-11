@@ -489,6 +489,11 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 37.5em) {
       .service-each .services-content-toggle {
         background: none; } }
+    .service-each .services-content-toggle.arrow-up {
+      background-image: url(../img/arrow-up.png); }
+      @media screen and (min-width: 37.5em) {
+        .service-each .services-content-toggle.arrow-up {
+          background: none; } }
   .service-each .services-content {
     display: none;
     margin-bottom: 3em; }

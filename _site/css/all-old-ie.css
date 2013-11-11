@@ -399,6 +399,9 @@ section, .site-header, .site-footer {
     background: url(../img/arrow-down.png) 95% 15px no-repeat;
     background-size: 22px 15px;
     background: none; }
+    .service-each .services-content-toggle.arrow-up {
+      background-image: url(../img/arrow-up.png);
+      background: none; }
   .service-each .services-content {
     display: none;
     margin-bottom: 3em;

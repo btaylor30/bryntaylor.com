@@ -461,6 +461,13 @@ section, .site-header, .site-footer {
     @include respond-min(37.5em) {
       background: none;
     }
+
+    &.arrow-up {
+      background-image: url(../img/arrow-up.png);
+      @include respond-min(37.5em) {
+        background: none;
+      }
+    }
   }
 
   .services-content {

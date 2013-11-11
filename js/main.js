@@ -79,6 +79,7 @@ function flexsliderInit(el) {
     event.preventDefault();
 
     $(this).siblings('.services-content').toggleClass('show');
+    $(this).toggleClass('arrow-up');
   });
 
     //learn more toggle
