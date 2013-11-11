@@ -135,13 +135,14 @@ section, .site-header, .site-footer {
 
 .button {
   border: 1px solid rgba($white, .5);
-  outline: 5px solid $green;
   background: $green;
+  box-shadow: 0 0 0 5px $green;
   font-family: $sans-serif;
   color: $white;
   padding: 15px 20px;
+  position: relative;
   text-decoration: none;
-
+  
   &:hover {
     background: $darkgreen;
     color: $white;

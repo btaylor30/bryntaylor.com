@@ -215,11 +215,12 @@ section, .site-header, .site-footer {
 
 .button {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  outline: 5px solid #00886b;
   background: #00886b;
+  box-shadow: 0 0 0 5px #00886b;
   font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
   color: white;
   padding: 15px 20px;
+  position: relative;
   text-decoration: none; }
   .button:hover {
     background: #086866;
