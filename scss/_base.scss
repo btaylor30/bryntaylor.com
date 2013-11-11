@@ -342,7 +342,7 @@ section, .site-header, .site-footer {
     }
   }
 
-  a, .learn-more-intro {
+  a, .learn-more {
     color: $black;
     cursor: pointer;
     text-decoration: underline;
@@ -475,7 +475,7 @@ section, .site-header, .site-footer {
     }    
   }
 
-  .services-extra {
+  .content-extra {
     display: inline-block;
     overflow: hidden;
     @include transition(height 200ms);

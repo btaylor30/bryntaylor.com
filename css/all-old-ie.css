@@ -327,13 +327,13 @@ section, .site-header, .site-footer {
   .home-intro__content p {
     margin-bottom: 1.2em;
     padding: 0 5px; }
-  .home-intro__content a, .home-intro__content .learn-more-intro {
+  .home-intro__content a, .home-intro__content .learn-more {
     color: #333333;
     cursor: pointer;
     text-decoration: underline;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     font-size: .8em; }
-    .home-intro__content a.hide, .home-intro__content .learn-more-intro.hide {
+    .home-intro__content a.hide, .home-intro__content .learn-more.hide {
       display: none; }
   .home-intro__content .content-extra {
     display: none; }
@@ -406,7 +406,7 @@ section, .site-header, .site-footer {
     .service-each .services-content.show {
       display: block;
       margin-bottom: 1em; }
-  .service-each .services-extra {
+  .service-each .content-extra {
     display: inline-block;
     overflow: hidden;
     -moz-transition: height 200ms;
@@ -415,7 +415,7 @@ section, .site-header, .site-footer {
     -webkit-transition: height 200ms;
     transition: height 200ms;
     max-height: 0; }
-    .service-each .services-extra.show {
+    .service-each .content-extra.show {
       display: inline;
       max-height: 10000px; }
   .service-each .learn-more {

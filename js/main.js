@@ -73,12 +73,6 @@ function flexsliderInit(el) {
     }
   });
 
-  //home intro toggle
-  $('.learn-more-intro').click(function (event) {
-    event.preventDefault();
-    $(this).siblings('.content-extra').addClass('show');
-    $(this).addClass('hide');
-  });
 
   //services toggle
   $('.services-content-toggle').click(function (event) {
@@ -87,10 +81,12 @@ function flexsliderInit(el) {
     $(this).siblings('.services-content').toggleClass('show');
   });
 
-  //services desktop toggle
+    //learn more toggle
   $('.learn-more').click(function (event) {
     event.preventDefault();
-    $(this).siblings('.services-content').children('.services-extra').toggleClass('show');
+    var sectionName = $(this).data('more');
+    
+    $('.content-extra[data-extra="'+ sectionName +'"]').addClass('show');
     $(this).addClass('hide');
   });
 
