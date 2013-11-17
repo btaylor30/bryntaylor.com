@@ -474,7 +474,8 @@ section, .site-header, .site-footer {
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     font-size: 1.125em;
     font-weight: 400;
-    margin-bottom: .2em; }
+    margin-bottom: .2em;
+    text-transform: uppercase; }
   .service-each h2 {
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     margin-bottom: 20px; }
