@@ -641,11 +641,11 @@ section, .site-header, .site-footer {
   padding: 25px 20px 5px;
 
   .first__slide & {
+    position: absolute;
+    top: 0;
+    height: 100%;
     @include respond-min(37.5em) {
       padding: 40px 40px 0;
-      position: absolute;
-      top: 0;
-      height: 100%;
     }
   }
 }

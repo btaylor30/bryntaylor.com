@@ -493,10 +493,10 @@ section, .site-header, .site-footer {
   background: rgba(246, 245, 241, 0.9);
   padding: 25px 20px 5px; }
   .first__slide .lookbook__slide-caption {
-    padding: 40px 40px 0;
     position: absolute;
     top: 0;
-    height: 100%; }
+    height: 100%;
+    padding: 40px 40px 0; }
 
 /*
  * jQuery FlexSlider v2.2.0

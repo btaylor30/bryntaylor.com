@@ -626,12 +626,13 @@ section, .site-header, .site-footer {
 .lookbook__slide-caption {
   background: rgba(246, 245, 241, 0.9);
   padding: 25px 20px 5px; }
-  @media screen and (min-width: 37.5em) {
-    .first__slide .lookbook__slide-caption {
-      padding: 40px 40px 0;
-      position: absolute;
-      top: 0;
-      height: 100%; } }
+  .first__slide .lookbook__slide-caption {
+    position: absolute;
+    top: 0;
+    height: 100%; }
+    @media screen and (min-width: 37.5em) {
+      .first__slide .lookbook__slide-caption {
+        padding: 40px 40px 0; } }
 
 /*
  * jQuery FlexSlider v2.2.0
