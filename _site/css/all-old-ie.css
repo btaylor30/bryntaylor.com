@@ -1462,6 +1462,15 @@ section, .site-header, .site-footer {
 
 .home-intro {
   position: relative; }
+  @media screen and (min-height: 960px) and (min-width: 52em) {
+    .home-intro {
+      height: 40%; } }
+  @media screen and (min-height: 960px) and (min-width: 75em) {
+    .home-intro {
+      height: 60%; } }
+  @media screen and (min-height: 960px) and (min-width: 105em) {
+    .home-intro {
+      height: 83%; } }
 
 .home-intro__image {
   display: block;

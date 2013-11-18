@@ -91,7 +91,7 @@ function flexsliderInit(el) {
   });
 
   // Video Play/Pause toggle
-  $('.video-toggle, .video-container').click(function (event) {
+  $('.video-toggle, .show-video').click(function (event) {
     event.preventDefault();
 
     if (player.getPlayerState() == 1) {
@@ -99,7 +99,7 @@ function flexsliderInit(el) {
       stopVideo();
     }
 
-    $('.video-container').toggleClass('show').fitVids();
+    $('.video-container').toggleClass('show').toggleClass('show-video').fitVids();
   });
 
   //cloning

@@ -41,17 +41,3 @@
 	&:after { content: ""; display: table; clear: both; }
 }
 
-@mixin flexbox {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -o-box;
-	display: box;
-	display: -webkit-flexbox;
-	display: -moz-flexbox;
-	display: -o-flexbox;
-	display: flexbox;
-	@include prefix(box-align, center);
-	@include prefix(flex-align, center);
-	@include prefix(box-pack, center);
-	@include prefix(flex-pack, center);
-}

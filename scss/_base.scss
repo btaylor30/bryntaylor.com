@@ -296,6 +296,15 @@ section, .site-header, .site-footer {
     background-position: center 40%;
     height: 83%;
   }
+  @media screen and (min-height: 960px) and (min-width: 52em) {
+    height: 40%;
+  }
+  @media screen and (min-height: 960px) and (min-width: 75em ) {
+    height: 60%;
+  }
+  @media screen and (min-height: 960px) and (min-width: 105em ) {
+    height: 83%;
+  }
 }
 
 .home-intro__image {
