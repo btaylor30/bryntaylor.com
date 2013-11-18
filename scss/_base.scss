@@ -388,25 +388,20 @@ section, .site-header, .site-footer {
 
 .service-each {
   @include clearfix;
-  border-top: 1px solid rgba($black, .3);
   display: inline-block;
   float: left;
   padding: 0;
-  padding: 20px 5px 0;
   position: relative;
   text-align: left;
   width: 100%;
   z-index: 2;
   @include respond-min(37.5em) {
-    padding: 30px 0;
+    padding: 0 0 30px;
     margin-right: 60px;
     text-align: center;
     width: 44%;
   }
   @include respond-min(49.375em) {
-    padding: 30px 0;
-    margin-right: 60px;
-    text-align: center;
     width: 28%;
   }
 
@@ -436,19 +431,26 @@ section, .site-header, .site-footer {
   }
 
   h1 {
+    border-top: 1px solid rgba($black, .3);
     color: $green;
     font-family: $sans-serif;
     font-size: 1.125em;
     font-weight: 400;
     margin-bottom: .2em;
+    padding: 20px 5px 0;
     text-transform: uppercase;
+    @include respond-min(37.5em) {
+      padding: 30px 0 0;
+    }
   }
 
   h2 {
     font-family: $sans-serif;
     margin-bottom: 20px;
+    padding: 0 5px;
     @include respond-min(37.5em) {
       margin-bottom: 1.8em;
+      padding: 0;
     }
 
     span {
@@ -457,7 +459,7 @@ section, .site-header, .site-footer {
   }
 
   .services-content-toggle {
-    background: url(../img/arrow-down.png) 95% 15px no-repeat;
+    background: url(../img/arrow-down.png) 95% 30px no-repeat;
     background-size: 22px 15px;
     @include respond-min(37.5em) {
       background: none;
