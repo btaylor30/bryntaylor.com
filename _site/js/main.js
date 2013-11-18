@@ -78,8 +78,7 @@ function flexsliderInit(el) {
   $('.services-content-toggle').click(function (event) {
     event.preventDefault();
 
-    $(this).siblings('.services-content').toggleClass('show');
-    $(this).toggleClass('arrow-up');
+    $(this).siblings('.services-content').toggleClass('show').toggleClass('arrow-up');
   });
 
     //learn more toggle
@@ -96,7 +95,7 @@ function flexsliderInit(el) {
     event.preventDefault();
 
     if (player.getPlayerState() == 1) {
-      console.log(player.getPlayerState());
+      // console.log(player.getPlayerState());
       stopVideo();
     }
 
