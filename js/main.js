@@ -91,7 +91,7 @@ function flexsliderInit(el) {
   });
 
   // Video Play/Pause toggle
-  $('.video-toggle, .show-video').click(function (event) {
+  $('.video-toggle, .video-cancel').click(function (event) {
     event.preventDefault();
 
     if (player.getPlayerState() == 1) {
