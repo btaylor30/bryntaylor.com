@@ -4,3 +4,12 @@ pygments: true
 google_analytics_id: UA-XXXXXXXXX
 url: http://bryntaylorstyle.com
 description: "Wardrobe consulting and personal styling services for men and women."
+exclude:
+ - unicorn.rb
+ - README.md
+ - Procfile
+ - Gemfile
+ - Gemfile.lock
+ - config.ru
+ - vendor
+
