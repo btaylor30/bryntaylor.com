@@ -1520,6 +1520,17 @@ section, .site-header, .site-footer {
     margin-bottom: 1.5em;
     padding: 0; }
 
+.masonry_container {
+  *zoom: 1;
+  margin-bottom: 2em; }
+  .masonry_container:before {
+    content: "";
+    display: table; }
+  .masonry_container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .service-each {
   *zoom: 1;
   display: inline-block;
@@ -1530,7 +1541,7 @@ section, .site-header, .site-footer {
   width: 100%;
   z-index: 2;
   padding: 0 0 30px;
-  margin-right: 60px;
+  margin-right: 4%;
   text-align: center;
   width: 44%; }
   .service-each:before {
@@ -1540,8 +1551,6 @@ section, .site-header, .site-footer {
     content: "";
     display: table;
     clear: both; }
-  .service-each:nth-child(2n + 1) {
-    margin-right: 0; }
   .service-each:last-child {
     margin-right: 0; }
   .service-each h1 {
@@ -1562,6 +1571,16 @@ section, .site-header, .site-footer {
     padding: 0; }
     .service-each h2 span {
       font-size: 12px; }
+  .service-each h3 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1em; }
+  .service-each h4 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+  .service-each ul {
+    padding-left: 1em;
+    margin-bottom: 2em; }
   .service-each .services-content-toggle {
     background: url(../img/arrow-down.png) 95% 30px no-repeat;
     background-size: 22px 15px;
@@ -1601,9 +1620,15 @@ section, .site-header, .site-footer {
     -webkit-transition: all 150ms cubic-bezier(0.2, 0.02, 0.02, 0.97);
     transition: all 150ms cubic-bezier(0.2, 0.02, 0.02, 0.97);
     display: block;
-    margin-bottom: 80px; }
-    .service-each .learn-more.hide {
-      opacity: 0; }
+    margin-bottom: 20px; }
+
+.masonry_item.show-full {
+  text-align: left;
+  width: 100%; }
+  .masonry_item.show-full .learn-more {
+    opacity: 0; }
+  .masonry_item.show-full .service-tagline {
+    display: none; }
 
 .interested {
   text-align: center;

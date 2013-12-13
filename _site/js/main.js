@@ -81,14 +81,40 @@ function flexsliderInit(el) {
     $(this).siblings('.services-content').toggleClass('show').toggleClass('arrow-up');
   });
 
-    //learn more toggle
-  $('.learn-more').click(function (event) {
-    event.preventDefault();
-    var sectionName = $(this).data('more');
-    
-    $('.content-extra[data-extra="'+ sectionName +'"]').addClass('show');
-    $(this).addClass('hide');
+  // var $masonry = $('.masonry_container');
+
+  // $masonry.imagesLoaded( function(){
+  //   $masonry.masonry({
+  //     itemSelector : '.masonry_item',
+  //     isAnimated: true
+  //   });
+  // });
+
+  $(".learn-more").click(function (event) {
+      event.preventDefault();
+      var sectionName = $(this).data('postname');
+      $('.content-extra').removeClass('show');
+      $('.content-extra[data-postname="'+ sectionName +'"]').addClass('show');
+
+      $('.service-each[data-postname="'+ sectionName +'"]').siblings().removeClass('show-full').end().addClass('show-full');
+      // masonry
+      // setTimeout(function() {
+      //   $masonry.masonry({
+      //     itemSelector : '.masonry_item',
+      //     isAnimated: true
+      //   });
+      // }, 500);  
   });
+
+  //   //learn more toggle
+  // $('.learn-more').click(function (event) {
+  //   event.preventDefault();
+  //   var sectionName = $(this).data('more');
+    
+  //   $('.content-extra[data-extra="'+ sectionName +'"]').addClass('show');
+  //   $(this).addClass('hide');
+  //   $('.tagline').addClass('hide');
+  // });
 
   // Video Play/Pause toggle
   $('.video-toggle, .video-cancel').click(function (event) {

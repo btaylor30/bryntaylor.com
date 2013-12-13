@@ -1585,6 +1585,17 @@ section, .site-header, .site-footer {
         margin-bottom: 1.5em;
         padding: 0; } }
 
+.masonry_container {
+  *zoom: 1;
+  margin-bottom: 2em; }
+  .masonry_container:before {
+    content: "";
+    display: table; }
+  .masonry_container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .service-each {
   *zoom: 1;
   display: inline-block;
@@ -1604,29 +1615,15 @@ section, .site-header, .site-footer {
   @media screen and (min-width: 37.5em) {
     .service-each {
       padding: 0 0 30px;
-      margin-right: 60px;
+      margin-right: 4%;
       text-align: center;
       width: 44%; } }
   @media screen and (min-width: 49.375em) {
     .service-each {
+      margin-right: 4%;
       width: 28%; } }
-  @media screen and (min-width: 37.5em) {
-    .service-each:nth-child(2n + 1) {
-      margin-right: 0; } }
-  @media screen and (min-width: 49.375em) {
-    .service-each:nth-child(2n + 1) {
-      margin-right: 60px; } }
-  @media screen and (min-width: 49.375em) {
-    .service-each:nth-child(3n + 1) {
-      margin-right: 0; } }
   .service-each:last-child {
     margin-right: 0; }
-    @media screen and (min-width: 49.375em) {
-      .service-each:last-child {
-        display: block;
-        float: none;
-        margin: 0 auto;
-        z-index: 1; } }
   .service-each h1 {
     border-top: 1px solid rgba(51, 51, 51, 0.3);
     color: #00886b;
@@ -1649,6 +1646,16 @@ section, .site-header, .site-footer {
         padding: 0; } }
     .service-each h2 span {
       font-size: 12px; }
+  .service-each h3 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 1em; }
+  .service-each h4 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: 400; }
+  .service-each ul {
+    padding-left: 1em;
+    margin-bottom: 2em; }
   .service-each .services-content-toggle {
     background: url(../img/arrow-down.png) 95% 30px no-repeat;
     background-size: 22px 15px; }
@@ -1698,9 +1705,15 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 37.5em) {
       .service-each .learn-more {
         display: block;
-        margin-bottom: 80px; } }
-    .service-each .learn-more.hide {
-      opacity: 0; }
+        margin-bottom: 20px; } }
+
+.masonry_item.show-full {
+  text-align: left;
+  width: 100%; }
+  .masonry_item.show-full .learn-more {
+    opacity: 0; }
+  .masonry_item.show-full .service-tagline {
+    display: none; }
 
 .interested {
   text-align: center;

@@ -395,6 +395,11 @@ section, .site-header, .site-footer {
   }
 }
 
+.masonry_container {
+  @include clearfix;
+  margin-bottom: 2em;
+}
+
 .service-each {
   @include clearfix;
   display: inline-block;
@@ -406,37 +411,38 @@ section, .site-header, .site-footer {
   z-index: 2;
   @include respond-min(37.5em) {
     padding: 0 0 30px;
-    margin-right: 60px;
+    margin-right: 4%;
     text-align: center;
     width: 44%;
   }
   @include respond-min(49.375em) {
+    margin-right: 4%;
     width: 28%;
   }
 
-  &:nth-child(2n + 1) {
-    @include respond-min(37.5em) {
-      margin-right: 0;
-    }
-    @include respond-min(49.375em) {
-      margin-right: 60px;
-    }
-  }
+  // &:nth-child(2n + 1) {
+  //   @include respond-min(37.5em) {
+  //     margin-right: 0;
+  //   }
+  //   @include respond-min(49.375em) {
+  //     margin-right: 60px;
+  //   }
+  // }
 
-  &:nth-child(3n + 1) {
-    @include respond-min(49.375em) {
-      margin-right: 0;
-    }
-  }
+  // &:nth-child(3n + 1) {
+  //   @include respond-min(49.375em) {
+  //     margin-right: 0;
+  //   }
+  // }
 
   &:last-child {
     margin-right: 0;
-    @include respond-min(49.375em) {
-      display: block;
-      float: none;
-      margin: 0 auto;
-      z-index: 1;
-    }
+    // @include respond-min(49.375em) {
+    //   display: block;
+    //   float: none;
+    //   margin: 0 auto;
+    //   z-index: 1;
+    // }
   }
 
   h1 {
@@ -465,6 +471,22 @@ section, .site-header, .site-footer {
     span {
       font-size: 12px;
     }
+  }
+
+  h3 {
+    font-family: $sans-serif;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  h4 {
+    font-family: $sans-serif;
+    font-weight: 400;
+  }
+
+  ul {
+    padding-left: 1em;
+    margin-bottom: 2em;
   }
 
   .services-content-toggle {
@@ -517,13 +539,23 @@ section, .site-header, .site-footer {
     @include transition;
     @include respond-min(37.5em) {
       display: block;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
     }
+  }
+}
 
-    &.hide {
+.masonry_item {
+  &.show-full {
+    text-align: left;
+    width: 100%;
+
+    .learn-more {
       opacity: 0;
     }
 
+    .service-tagline {
+      display: none;
+    }
   }
 }
 

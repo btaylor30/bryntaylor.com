@@ -17,16 +17,42 @@ published: true
 <a name="services"></a>
 <section class="services wrap">
   <h1 class="section-heading">Services for Men &amp; Women</h1>
-  {% for post in site.categories.services reversed %}
-  <article class="service-each">
-    <hgroup class="services-content-toggle">
-      <h1>{{ post.title }}</h1>
-      <h2>{{ post.price }} <span>&amp; up</span></h2>
-    </hgroup>
-    {{ post.content }}
-    <p class="learn-more" data-more="{{ post.name }}">Learn more...</p>
-  </article>
+  <div class="masonry_container">
+  {% for post in site.categories.top reversed %}
+    <article class="service-each masonry_item" data-postname="{{ post.name }}">
+      <hgroup class="services-content-toggle">
+        <h1>{{ post.title }}</h1>
+        <h2>{{ post.price }} <span>&amp; up</span></h2>
+      </hgroup>
+      <div class="services-content">
+        <div class="service-tagline">{{ post.tagline }}</div>
+        <span class="content-extra" data-postname="{{ post.name }}">
+        {{ post.content }}
+        </span>
+      </div>
+      <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
+    </article>
   {% endfor %}
+  </div>
+
+  <h1 class="section-heading">Other Services</h1>
+  <div class="masonry_container">
+  {% for post in site.categories.other reversed %}
+    <article class="service-each masonry_item" data-postname="{{ post.name }}">
+      <hgroup class="services-content-toggle">
+        <h1>{{ post.title }}</h1>
+        <h2>{{ post.price }} <span>&amp; up</span></h2>
+      </hgroup>
+      <div class="services-content">
+        <div class="service-tagline">{{ post.tagline }}</div>
+        <span class="content-extra" data-postname="{{ post.name }}">
+        {{ post.content }}
+        </span>
+      </div>
+      <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
+    </article>
+  {% endfor %}
+  </div>
 </section>
 <a name="interested"></a>
 <section class="interested">
