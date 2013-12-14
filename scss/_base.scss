@@ -575,7 +575,7 @@ section, .site-header, .site-footer {
   width: 80%;
   height: 80%;
   opacity: 0;
-  @include transition((opacity 500ms, top 700ms));
+  @include transition((opacity 500ms, top 100ms));
 
   .service-each {
     width: 100%;

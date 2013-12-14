@@ -1734,11 +1734,11 @@ section, .site-header, .site-footer {
   width: 80%;
   height: 80%;
   opacity: 0;
-  -moz-transition: opacity 500ms, top 700ms;
-  -ms-transition: opacity 500ms, top 700ms;
-  -o-transition: opacity 500ms, top 700ms;
-  -webkit-transition: opacity 500ms, top 700ms;
-  transition: opacity 500ms, top 700ms; }
+  -moz-transition: opacity 500ms, top 100ms;
+  -ms-transition: opacity 500ms, top 100ms;
+  -o-transition: opacity 500ms, top 100ms;
+  -webkit-transition: opacity 500ms, top 100ms;
+  transition: opacity 500ms, top 100ms; }
   .services-lightbox .service-each {
     width: 100%;
     padding: 1em;
