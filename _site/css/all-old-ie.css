@@ -1595,7 +1595,8 @@ section, .site-header, .site-footer {
     margin-bottom: 0; }
     .service-each .services-content.show {
       display: block;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      padding: 0 5px; }
   .service-each .content-extra {
     display: inline-block;
     overflow: hidden;
