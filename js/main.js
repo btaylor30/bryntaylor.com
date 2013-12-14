@@ -93,10 +93,15 @@ function flexsliderInit(el) {
   $(".learn-more").click(function (event) {
       event.preventDefault();
       var sectionName = $(this).data('postname');
-      $('.content-extra').removeClass('show');
-      $('.content-extra[data-postname="'+ sectionName +'"]').addClass('show');
+      if( $(window).width() <= 600) {
+        $('.content-extra').removeClass('show');
+        $('.content-extra[data-postname="'+ sectionName +'"]').addClass('show');
 
-      $('.service-each[data-postname="'+ sectionName +'"]').siblings().removeClass('show-full').end().addClass('show-full');
+        $('.service-each[data-postname="'+ sectionName +'"]').siblings().removeClass('show-full').end().addClass('show-full');
+      } else {
+        $('.service-each[data-postname="'+ sectionName +'"]').clone().appendTo('.services-lightbox-content');
+        $('body').addClass('show-services-lightbox');
+      }
       // masonry
       // setTimeout(function() {
       //   $masonry.masonry({
@@ -133,8 +138,15 @@ function flexsliderInit(el) {
     $('.interested').clone().appendTo('.extend-interested-block');
   }
 
+  $('body').append( "<div class='overlay'></div><div class='services-lightbox'><div class='services-lightbox-cancel back'><img src='img/button-back-dark.png'></div><div class='services-lightbox-content'></div></div>" );
 
 })( jQuery );//end
+
+$('.services-lightbox-cancel').click(function (event) {
+  event.preventDefault();
+  $('body').removeClass('show-services-lightbox');
+  $('.services-lightbox-content').empty();
+});
 
 $(window).load(function() {
   winWidth = $(window).width();
