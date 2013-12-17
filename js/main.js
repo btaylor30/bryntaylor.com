@@ -93,6 +93,7 @@ function flexsliderInit(el) {
       } else {
         $('.service-each[data-postname="'+ sectionName +'"]').clone().appendTo('.services-lightbox-content');
         $('body').addClass('show-services-lightbox');
+        $('.overlay').addClass('overlay-cancel');
       } 
   });
 
@@ -121,14 +122,15 @@ function flexsliderInit(el) {
     $('.interested').clone().appendTo('.extend-interested-block');
   }
 
-  $('body').append( "<div class='overlay'></div><div class='services-lightbox'><div class='services-lightbox-cancel back'><img src='img/button-back-dark.png'></div><div class='services-lightbox-content'></div></div>" );
+  $('body').append( "<div class='overlay'><div class='overlay-cancel back'><img src='img/button-back.png'></div></div><div class='services-lightbox'><div class='services-lightbox-content'></div></div>" );
 
 })( jQuery );//end
 
-$('.services-lightbox-cancel').click(function (event) {
+$('.overlay').click(function (event) {
   event.preventDefault();
   $('body').removeClass('show-services-lightbox');
   $('.services-lightbox-content').empty();
+  $('.overlay').removeClass('overlay-cancel');
 });
 
 $(window).load(function() {

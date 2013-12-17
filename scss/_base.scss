@@ -604,7 +604,7 @@ section, .site-header, .site-footer {
       text-align: center;
       width: 45%;
     }
-    @include respond-min(49.375em) {
+    @include respond-min(56em) {
       margin-right: 4%;
       width: 29%;
     }
@@ -629,6 +629,7 @@ section, .site-header, .site-footer {
 
 .show-services-lightbox {
   .overlay {
+    cursor: pointer;
     position: fixed;
     width: 100%;
     height: 100%;

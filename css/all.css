@@ -1784,7 +1784,7 @@ section, .site-header, .site-footer {
         margin-right: 5%;
         text-align: center;
         width: 45%; } }
-    @media screen and (min-width: 49.375em) {
+    @media screen and (min-width: 56em) {
       .services-lightbox .service-block {
         margin-right: 4%;
         width: 29%; } }
@@ -1800,6 +1800,7 @@ section, .site-header, .site-footer {
     z-index: 123; }
 
 .show-services-lightbox .overlay {
+  cursor: pointer;
   position: fixed;
   width: 100%;
   height: 100%;
