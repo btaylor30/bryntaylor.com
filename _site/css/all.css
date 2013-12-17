@@ -1826,7 +1826,7 @@ section, .site-header, .site-footer {
     padding-top: 2.5em; }
     @media screen and (min-width: 49.375em) {
       .book_callout .services-title {
-        padding-top: 20px; } }
+        padding-top: 30px; } }
   .book_callout img {
     margin: 1em auto; }
 
