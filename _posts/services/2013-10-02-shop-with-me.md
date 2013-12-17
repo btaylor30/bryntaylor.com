@@ -1,28 +1,28 @@
 ---
 layout: services
 title: Shop with Me
-price: $645
+price: $565
 categories: services top
 name: "shop-with-me"
 published: true
-tagline: Learn to shop smarter, not harder.
+tagline: Take the guesswork out of shopping with one-on-one guidance from a seasoned pro.
 ---
 
-Sometimes when we so used to our own clothes, we lose the ability to decide if they are truly right for us, and we often lose confidence in being able to wear pieces in any new way. During the Closet Refresh, you’ll receive expert input on the types of styles that work best for you, which of your pieces are not showing you in your best light, and how to mix and match what you have with carefully suggested new pieces in order to maximize your wardrobe. 
-
-### Includes:
-
-- #### Closet edit & organization
-  I will help your closet become more streamlined and organized 
-
-- #### Outfit Creation
-  You’ll gain confidence in how to put pieces together in whole new ways
-
-- #### Photo lookbook 
-  I will photograph each of your new outfits and create a reference guide for you
-  
-
-### Testimonials from clients who purchased this:
-"Bryn made me feel so good. Thanks to her I have a great grasp of this stuff!"
-
-"I hated putting stuff together, but Bryn helped me decide how to decide what to get rid of."
+Whether the idea of shopping overwhelms you, or you're simply looking for fresh ideas, the Shop with Me package offers intimate help navigating the stores. Beginning with a home closet evaluation, I will help you see which new pieces could best complement your style. We will then meet to shop for up to three hours in carefully selected stores, where I will introduce you to a variety of new brands and styles to help you look your absolute best.
+ 
+# Includes:
+ 
+- ### Closet Evaluation
+I will evaluate your current closet to decide which new pieces we will need to complete your wardrobe.
+ 
+- ### Shopping Session + Pre-Pull
+Before you even set foot in the store, I will be at work for you selecting pieces and having them ready the minute you arrive. We will then go through the selections together to determine which pieces flatter you the most.
+ 
+- ### Photo Lookbook
+I'll create a photo collage lookbook to show you how your amazing new clothes will fit in with your current wardrobe.
+ 
+*The shopping was so efficient, and I truly could not have found things that were so flattering on my own. In 3 hours, I did more with Bryn than I could do in 3 years. She had relationships with people in the stores that were able to find other things that were not in the store. I feel like it was a great gift to myself for the life and look I want.*
+–Abby, investment banker
+ 
+*I am mildly obsessed with the jeans Bryn found for me. Would never have picked them out myself and now I can’t live without them.*
+–Joel, CPA

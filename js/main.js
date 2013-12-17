@@ -78,7 +78,8 @@ function flexsliderInit(el) {
   $('.services-content-toggle').click(function (event) {
     event.preventDefault();
 
-    $(this).siblings('.services-content').toggleClass('show').toggleClass('arrow-up');
+    $(this).toggleClass('arrow-up');
+    $(this).siblings('.services-content').toggleClass('show');
   });
 
   // var $masonry = $('.masonry_container');

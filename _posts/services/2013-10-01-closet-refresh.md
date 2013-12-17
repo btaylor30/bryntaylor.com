@@ -5,25 +5,21 @@ price: $445
 categories: services top
 name: "closet-refresh"
 published: true
-tagline: See how exciting your current closet could be.
+tagline: Cut through the clutter and see all the hidden potential your wardrobe has to offer. 
 ---
 
-
-Sometimes when we so used to our own clothes, we lose the ability to decide if they are truly right for us, and we often lose confidence in being able to wear pieces in any new way. During the Closet Refresh, you’ll receive expert input on the types of styles that work best for you, which of your pieces are not showing you in your best light, and how to mix and match what you have with carefully suggested new pieces in order to maximize your wardrobe. 
-
-### Includes:
-
-- #### Closet edit & organization
-  I will help your closet become more streamlined and organized 
-
-- #### Outfit Creation
-  You’ll gain confidence in how to put pieces together in whole new ways
-
-- #### Photo lookbook 
-  I will photograph each of your new outfits and create a reference guide for you
-  
-
-### Testimonials from clients who purchased this:
-"Bryn made me feel so good. Thanks to her I have a great grasp of this stuff!"
-
-"I hated putting stuff together, but Bryn helped me decide how to decide what to get rid of."
+Ever feel like you have a closet full of nothing to wear? Do you wonder if your clothes are even that flattering? The Closet Refresh will teach you how to spot what is and is not working for you, and how to use what you have to create a more exciting wardrobe. Learn what silhouettes, styles, and colors suit you best, and how to confidently mix and match your clothes to create incredible new looks.
+ 
+# Includes:
+ 
+- ### Closet Edit
+We will go through your wardrobe piece by piece and discuss which clothes flatter you the most, and which crucial items you’re missing.
+ 
+- ### Outfit Creation
+I’ll put together new outfits from the pieces already in your closet.
+ 
+- ### Photo Lookbook
+You'll receive a personalized look book that features high-res photos of all your new ensembles. 
+ 
+ 
+*Bryn methodically reviewed every piece of clothing in my closets, carefully appraising for fit and style. I found her tactful and on-the-mark recommendations to purge items easy to follow, and together we pitched anything that didn’t fit, was too old, or was just unflattering.  Bryn then pieced together and photographed dozens of new outfits, which she later presented to me in a fabulous “Look Book”. The entire process was a delight, as was Bryn.* –Anne, strategic communications advisor

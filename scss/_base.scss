@@ -403,49 +403,51 @@ section, .site-header, .site-footer {
 .service-each {
   @include clearfix;
   display: inline-block;
-  float: left;
   padding: 0;
   position: relative;
   text-align: left;
   width: 100%;
   z-index: 2;
   @include respond-min(37.5em) {
+    float: left;
     padding: 0 0 30px;
-    margin-right: 4%;
+    margin-right: 5%;
     text-align: center;
-    width: 44%;
+    width: 45%;
   }
   @include respond-min(49.375em) {
     margin-right: 4%;
-    width: 28%;
+    width: 29.5%;
   }
-
-  // &:nth-child(2n + 1) {
-  //   @include respond-min(37.5em) {
-  //     margin-right: 0;
-  //   }
-  //   @include respond-min(49.375em) {
-  //     margin-right: 60px;
-  //   }
-  // }
-
-  // &:nth-child(3n + 1) {
-  //   @include respond-min(49.375em) {
-  //     margin-right: 0;
-  //   }
-  // }
 
   &:last-child {
     margin-right: 0;
-    // @include respond-min(49.375em) {
-    //   display: block;
-    //   float: none;
-    //   margin: 0 auto;
-    //   z-index: 1;
-    // }
   }
 
   h1 {
+    font-family: $sans-serif;
+    font-weight: normal;
+    color: $green;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    @extend .services-price;
+    margin-bottom: .5em;
+  }
+
+  h3 {
+    font-family: $sans-serif;
+    font-weight: bold;
+    margin-bottom: .28em;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 2em;
+  }
+
+  .services-title {
     border-top: 1px solid rgba($black, .3);
     color: $green;
     font-family: $sans-serif;
@@ -459,7 +461,7 @@ section, .site-header, .site-footer {
     }
   }
 
-  h2 {
+  .services-price {
     font-family: $sans-serif;
     margin-bottom: 20px;
     padding: 0 5px;
@@ -471,22 +473,6 @@ section, .site-header, .site-footer {
     span {
       font-size: 12px;
     }
-  }
-
-  h3 {
-    font-family: $sans-serif;
-    font-weight: bold;
-    margin-bottom: 1em;
-  }
-
-  h4 {
-    font-family: $sans-serif;
-    font-weight: 400;
-  }
-
-  ul {
-    padding-left: 1.25em;
-    margin-bottom: 2em;
   }
 
   .services-content-toggle {
@@ -515,7 +501,21 @@ section, .site-header, .site-footer {
       display: block;
       margin-bottom: 1em;
       padding: 0 5px;
-    }    
+
+      .services-title {
+        border: 0;
+        color: lighten($black, 10%);
+        padding: 10px 0 0;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      .services-price {
+        padding: 0;
+        margin-bottom: 1em;
+      }
+    }   
   }
 
   .content-extra {
@@ -541,21 +541,6 @@ section, .site-header, .site-footer {
     @include respond-min(37.5em) {
       display: block;
       margin-bottom: 20px;
-    }
-  }
-}
-
-.masonry_item {
-  &.show-full {
-    text-align: left;
-    width: 100%;
-
-    .learn-more {
-      opacity: 0;
-    }
-
-    .service-tagline {
-      display: none;
     }
   }
 }
@@ -602,6 +587,40 @@ section, .site-header, .site-footer {
     }
   }
 
+  .service-block {
+    @include clearfix;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    @include respond-min(37.5em) {
+      float: left;
+      margin-top: 20px;
+      min-height: 265px;
+      padding: 0 0 30px;
+      margin-right: 5%;
+      text-align: center;
+      width: 45%;
+    }
+    @include respond-min(49.375em) {
+      margin-right: 4%;
+      min-height: 295px;
+      width: 29%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .services-title {
+      border-top: 1px solid rgba($black, .3);
+      margin-bottom: .2em;
+      padding: 20px 5px 0;
+    }
+  }
+
   .back {
     right: 1em;
     top: 1em;
@@ -625,6 +644,27 @@ section, .site-header, .site-footer {
     top: 10%;
     opacity: 1;
     z-index: 14;
+  }
+}
+
+.book_callout {
+  text-align: center;
+  @include respond-min(37.5em) {
+    width: 100%;
+  }
+  @include respond-min(49.375em) {
+    width: 29%;
+  }
+
+  .services-title {
+    padding-top: 2.5em;
+    @include respond-min(49.375em) {
+      padding-top: 20px;
+    }
+  }
+
+  img {
+    margin: 1em auto;
   }
 }
 

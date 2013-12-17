@@ -19,10 +19,10 @@ published: true
   <h1 class="section-heading">Services for Men &amp; Women</h1>
   <div class="masonry_container">
   {% for post in site.categories.top reversed %}
-    <article class="service-each masonry_item" data-postname="{{ post.name }}">
+    <article class="service-each" data-postname="{{ post.name }}">
       <hgroup class="services-content-toggle">
-        <h1>{{ post.title }}</h1>
-        <h2>{{ post.price }} <span>&amp; up</span></h2>
+        <h1 class="services-title">{{ post.title }}</h1>
+        <h2 class="services-price">{{ post.price }} <span>&amp; up</span></h2>
       </hgroup>
       <div class="services-content">
         <div class="service-tagline">{{ post.tagline }}</div>
@@ -38,10 +38,10 @@ published: true
   <h1 class="section-heading">Other Services</h1>
   <div class="masonry_container">
   {% for post in site.categories.other reversed %}
-    <article class="service-each masonry_item" data-postname="{{ post.name }}">
+    <article class="service-each" data-postname="{{ post.name }}">
       <hgroup class="services-content-toggle">
-        <h1>{{ post.title }}</h1>
-        <h2>{{ post.price }} <span>&amp; up</span></h2>
+        <h1 class="services-title">{{ post.title }}</h1>
+        <h2 class="services-price">{{ post.price }} <span>&amp; up</span></h2>
       </hgroup>
       <div class="services-content">
         <div class="service-tagline">{{ post.tagline }}</div>
@@ -52,6 +52,10 @@ published: true
       <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
     </article>
   {% endfor %}
+    <article class="service-each book_callout">
+      <h1 class="services-title">Try My New EBook</h1>
+      <p><a href="http://therestylist.us2.list-manage.com/subscribe?u=af94a82e99e0b5bdf5a7d7a1e&id=eea1162356"><img src="/img/book-cover.png" width="130" /></a></p>
+    </article>
   </div>
 </section>
 <a name="interested"></a>
