@@ -1779,7 +1779,7 @@ section, .site-header, .site-footer {
       .services-lightbox .service-block {
         float: left;
         margin-top: 20px;
-        min-height: 270px;
+        min-height: 295px;
         padding: 0 0 30px;
         margin-right: 5%;
         text-align: center;
@@ -1787,7 +1787,6 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 49.375em) {
       .services-lightbox .service-block {
         margin-right: 4%;
-        min-height: 295px;
         width: 29%; } }
     .services-lightbox .service-block:last-child {
       margin-right: 0; }

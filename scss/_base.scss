@@ -598,7 +598,7 @@ section, .site-header, .site-footer {
     @include respond-min(37.5em) {
       float: left;
       margin-top: 20px;
-      min-height: 270px;
+      min-height: 295px;
       padding: 0 0 30px;
       margin-right: 5%;
       text-align: center;
@@ -606,7 +606,6 @@ section, .site-header, .site-footer {
     }
     @include respond-min(49.375em) {
       margin-right: 4%;
-      min-height: 295px;
       width: 29%;
     }
 
