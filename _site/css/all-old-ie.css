@@ -1491,13 +1491,13 @@ section, .site-header, .site-footer {
   .home-intro__content p {
     margin-bottom: 1.2em;
     padding: 0 5px; }
-  .home-intro__content a, .home-intro__content .learn-more {
+  .home-intro__content a, .home-intro__content .learn-more, .home-intro__content .learn-more-intro {
     color: #333333;
     cursor: pointer;
     text-decoration: underline;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     font-size: .8em; }
-    .home-intro__content a.hide, .home-intro__content .learn-more.hide {
+    .home-intro__content a.hide, .home-intro__content .learn-more.hide, .home-intro__content .learn-more-intro.hide {
       display: none; }
   .home-intro__content .content-extra {
     display: none; }
