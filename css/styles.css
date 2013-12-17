@@ -2206,6 +2206,9 @@ html[xmlns] .slides {
     z-index: 9; }
     @media screen and (min-width: 37.5em) {
       .show-contact .contact {
+        top: 109px; } }
+    @media screen and (min-width: 56.25em) {
+      .show-contact .contact {
         top: 74px; } }
   .contact a {
     color: white; }

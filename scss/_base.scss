@@ -959,7 +959,10 @@ html[xmlns] .slides {display: block;}
     opacity: 1;
     z-index: 9;
     @include respond-min(37.5em) {
-      top: 74px;
+      top: 109px;
+    }
+    @include respond-min(56.25em) {
+      top: 74px; 
     }
   }
 
