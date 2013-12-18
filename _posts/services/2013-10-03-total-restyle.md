@@ -23,6 +23,8 @@ An entire session devoted to combining your new purchases with your current ward
  
 - ### Photo Lookbook
 You'll receive a personalized look book that features high-res photos of your new ensembles.
+
+***
  
 *I worked with Bryn to improve my professional image and I couldn't be happier with the results. She resurrected some clothes from my closet that just needed to be a part of the right ensemble; and she helped me shop for new clothes that were in my personal style, but just a better version of me. At work I'm projecting the image I need, and my wife thinks I look awesome! Bryn and Berkshire Hathaway are my two best investments.* - Michael, marketing consultant
 

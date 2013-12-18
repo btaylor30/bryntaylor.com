@@ -20,6 +20,7 @@ I’ll put together new outfits from the pieces already in your closet.
  
 - ### Photo Lookbook
 You'll receive a personalized look book that features high-res photos of all your new ensembles. 
- 
+
+***
  
 *Bryn methodically reviewed every piece of clothing in my closets, carefully appraising for fit and style. I found her tactful and on-the-mark recommendations to purge items easy to follow, and together we pitched anything that didn’t fit, was too old, or was just unflattering.  Bryn then pieced together and photographed dozens of new outfits, which she later presented to me in a fabulous “Look Book”. The entire process was a delight, as was Bryn.* –Anne, strategic communications advisor

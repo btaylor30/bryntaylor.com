@@ -13,11 +13,16 @@ published: true
 
     <p><a class="video-toggle" href="http://www.youtube.com/watch?v=w01uSblkppw">Check out my video</a> to learn about working with me.</p>
   </article>
+  <aside class="book-callout">
+    <h1>Are you on the list?</h1>
+    <p>Sign up to receive my monthly style tips, and get a copy of my latest ebook.</p>
+    <p><a href="http://therestylist.us2.list-manage.com/subscribe?u=af94a82e99e0b5bdf5a7d7a1e&id=eea1162356" target="_blank">Right this way.</a></p>
+  </aside>
 </section>
 <a name="services"></a>
 <section class="services wrap">
-  <h1 class="section-heading">Services for Men &amp; Women</h1>
-  <div class="masonry_container">
+  <h1 class="section-heading">Packages for Men &amp; Women</h1>
+  <div class="services-row">
   {% for post in site.categories.top reversed %}
     <article class="service-each" data-postname="{{ post.name }}">
       <hgroup class="services-content-toggle">
@@ -35,10 +40,10 @@ published: true
   {% endfor %}
   </div>
 
-  <h1 class="section-heading">Other Services</h1>
-  <div class="masonry_container">
+  <h1 class="section-heading">Other Offerings</h1>
+  <div class="services-row col-2">
   {% for post in site.categories.other reversed %}
-    <article class="service-each" data-postname="{{ post.name }}">
+    <article class="service-each service-no-float" data-postname="{{ post.name }}">
       <hgroup class="services-content-toggle">
         <h1 class="services-title">{{ post.title }}</h1>
         <h2 class="services-price">{{ post.price }} <span>&amp; up</span></h2>
@@ -52,10 +57,6 @@ published: true
       <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
     </article>
   {% endfor %}
-    <article class="service-each book_callout">
-      <h1 class="services-title">Try My New EBook</h1>
-      <p><a href="http://therestylist.us2.list-manage.com/subscribe?u=af94a82e99e0b5bdf5a7d7a1e&id=eea1162356"><img src="/img/book-cover.png" width="130" /></a></p>
-    </article>
   </div>
 </section>
 <a name="interested"></a>

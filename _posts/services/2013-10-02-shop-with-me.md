@@ -20,7 +20,9 @@ Before you even set foot in the store, I will be at work for you selecting piece
  
 - ### Photo Lookbook
 I'll create a photo collage lookbook to show you how your amazing new clothes will fit in with your current wardrobe.
- 
+
+***
+
 *The shopping was so efficient, and I truly could not have found things that were so flattering on my own. In 3 hours, I did more with Bryn than I could do in 3 years. She had relationships with people in the stores that were able to find other things that were not in the store. I feel like it was a great gift to myself for the life and look I want.*
 –Abby, investment banker
  

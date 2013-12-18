@@ -375,6 +375,34 @@ section, .site-header, .site-footer {
   }
 }
 
+.book-callout {
+  margin-top: 20px;
+  padding: 0 5px;
+  @include respond-min(52em) {
+    bottom: 2em;
+    color: $white;
+    background: rgba(#000, .2);
+    margin-top: 0;
+    max-width: 300px;
+    padding: 30px 30px 10px 40px;
+    position: absolute;
+    right: 2em;
+    text-align: center;
+    width: 30%;
+  }
+
+  h1 {
+    margin-bottom: .75em;
+    font-size: 1.5em;
+  }
+
+  a {
+    @include respond-min(52em) {
+      color: $white;
+    }
+  }
+}
+
 // ==========================================================================
 // Services
 // ==========================================================================
@@ -395,9 +423,15 @@ section, .site-header, .site-footer {
   }
 }
 
-.masonry_container {
+.services-row {
   @include clearfix;
   margin-bottom: 2em;
+  &.col-2 {
+    @include respond-min(49.375em) {
+      text-align: center;
+      display: table-row;
+    } 
+  }
 }
 
 .service-each {
@@ -597,14 +631,14 @@ section, .site-header, .site-footer {
     z-index: 2;
     @include respond-min(37.5em) {
       float: left;
-      margin-top: 20px;
-      min-height: 295px;
-      padding: 0 0 30px;
+      margin-top: 10px;
+      min-height: 265px;
+      padding: 0 0 20px;
       margin-right: 5%;
       text-align: center;
       width: 45%;
     }
-    @include respond-min(56em) {
+    @include respond-min(66em) {
       margin-right: 4%;
       width: 29%;
     }
@@ -647,25 +681,13 @@ section, .site-header, .site-footer {
   }
 }
 
-.book_callout {
-  text-align: center;
-  @include respond-min(37.5em) {
-    width: 100%;
-  }
+.service-no-float {
   @include respond-min(49.375em) {
-    width: 29%;
-  }
-
-  .services-title {
-    padding-top: 2.5em;
-    @include respond-min(49.375em) {
-      padding-top: 30px;
-    }
-  }
-
-  img {
-    margin: 1em auto;
-  }
+    float: none;
+    width: 33%;
+    padding: 0 2% 2em;
+    display: table-cell;
+  } 
 }
 
 // ==========================================================================
