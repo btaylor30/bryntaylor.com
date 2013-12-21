@@ -92,6 +92,7 @@ function flexsliderInit(el) {
         $('.service-each[data-postname="'+ sectionName +'"]').siblings().removeClass('show-full').end().addClass('show-full');
       } else {
         $('.service-each[data-postname="'+ sectionName +'"]').clone().appendTo('.services-lightbox-content');
+        $('.interested').clone().appendTo('.services-lightbox-content');
         $('body').addClass('show-services-lightbox');
         $('.overlay').addClass('overlay-cancel');
       } 
