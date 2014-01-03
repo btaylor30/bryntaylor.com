@@ -8,25 +8,56 @@ published: true
   <img src="img/background-intro.jpg" class="home-intro__image">
   <article class="home-intro__content">
     <h1>Dress well. <span class="heading-break">Do great things.</span></h1>
-    <p>Do you wish you could wake up Monday morning and not have to worry about what to wear? <span class="learn-more" data-more="intro">Learn more...</span>
+    <p>Do you wish you could wake up Monday morning and not have to worry about what to wear? <span class="learn-more-intro" data-more="intro">Learn more...</span>
     <span class="content-extra" data-extra="intro">Fashion is constantly in flux. Trends come and go, and what's 'in' is forever shape-shifting. I offer a solid strategy that allows you to receive trends at your discretion, look awesome all the time, and get on with your life. Together, we create a streamlined, confident wardrobe that gets you out the door and ready to do great things.</span></p>
 
     <p><a class="video-toggle" href="http://www.youtube.com/watch?v=w01uSblkppw">Check out my video</a> to learn about working with me.</p>
   </article>
+  <aside class="book-callout">
+    <h1>Are you on the list?</h1>
+    <p>Sign up to receive my monthly style tips, and get a copy of my latest ebook.</p>
+    <p><a href="http://therestylist.us2.list-manage.com/subscribe?u=af94a82e99e0b5bdf5a7d7a1e&id=eea1162356" target="_blank">Right this way.</a></p>
+  </aside>
 </section>
 <a name="services"></a>
 <section class="services wrap">
-  <h1 class="section-heading">Services for Men &amp; Women</h1>
-  {% for post in site.categories.services reversed %}
-  <article class="service-each">
-    <hgroup class="services-content-toggle">
-      <h1>{{ post.title }}</h1>
-      <h2>{{ post.price }} <span>&amp; up</span></h2>
-    </hgroup>
-    {{ post.content }}
-    <p class="learn-more" data-more="{{ post.name }}">Learn more...</p>
-  </article>
+  <h1 class="section-heading">Packages for Men &amp; Women</h1>
+  <div class="services-row">
+  {% for post in site.categories.top reversed %}
+    <article class="service-each" data-postname="{{ post.name }}">
+      <hgroup class="services-content-toggle">
+        <h1 class="services-title">{{ post.title }}</h1>
+        <h2 class="services-price">{{ post.price }} <span>&amp; up</span></h2>
+      </hgroup>
+      <div class="services-content">
+        <div class="service-tagline">{{ post.tagline }}</div>
+        <span class="content-extra" data-postname="{{ post.name }}">
+        {{ post.content }}
+        </span>
+      </div>
+      <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
+    </article>
   {% endfor %}
+  </div>
+
+  <h1 class="section-heading">Other Offerings</h1>
+  <div class="services-row col-2">
+  {% for post in site.categories.other reversed %}
+    <article class="service-each service-no-float" data-postname="{{ post.name }}">
+      <hgroup class="services-content-toggle">
+        <h1 class="services-title">{{ post.title }}</h1>
+        <h2 class="services-price">{{ post.price }} <span>&amp; up</span></h2>
+      </hgroup>
+      <div class="services-content">
+        <div class="service-tagline">{{ post.tagline }}</div>
+        <span class="content-extra" data-postname="{{ post.name }}">
+        {{ post.content }}
+        </span>
+      </div>
+      <p class="learn-more" data-postname="{{ post.name }}">Learn more...</p>
+    </article>
+  {% endfor %}
+  </div>
 </section>
 <a name="interested"></a>
 <section class="interested">

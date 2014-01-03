@@ -352,7 +352,7 @@ section, .site-header, .site-footer {
     }
   }
 
-  a, .learn-more {
+  a, .learn-more, .learn-more-intro {
     color: $black;
     cursor: pointer;
     text-decoration: underline;
@@ -371,6 +371,34 @@ section, .site-header, .site-footer {
     display: none;
     &.show {
       display: inline;
+    }
+  }
+}
+
+.book-callout {
+  margin-top: 20px;
+  padding: 0 5px;
+  @include respond-min(52em) {
+    bottom: 2em;
+    color: $white;
+    background: rgba(#000, .2);
+    margin-top: 0;
+    max-width: 300px;
+    padding: 30px 30px 10px 40px;
+    position: absolute;
+    right: 2em;
+    text-align: center;
+    width: 30%;
+  }
+
+  h1 {
+    margin-bottom: .75em;
+    font-size: 1.5em;
+  }
+
+  a {
+    @include respond-min(52em) {
+      color: $white;
     }
   }
 }
@@ -395,51 +423,65 @@ section, .site-header, .site-footer {
   }
 }
 
+.services-row {
+  @include clearfix;
+  margin-bottom: 2em;
+  &.col-2 {
+    @include respond-min(49.375em) {
+      text-align: center;
+      display: table-row;
+    } 
+  }
+}
+
 .service-each {
   @include clearfix;
   display: inline-block;
-  float: left;
   padding: 0;
   position: relative;
   text-align: left;
   width: 100%;
   z-index: 2;
   @include respond-min(37.5em) {
+    float: left;
     padding: 0 0 30px;
-    margin-right: 60px;
+    margin-right: 5%;
     text-align: center;
-    width: 44%;
+    width: 45%;
   }
   @include respond-min(49.375em) {
-    width: 28%;
-  }
-
-  &:nth-child(2n + 1) {
-    @include respond-min(37.5em) {
-      margin-right: 0;
-    }
-    @include respond-min(49.375em) {
-      margin-right: 60px;
-    }
-  }
-
-  &:nth-child(3n + 1) {
-    @include respond-min(49.375em) {
-      margin-right: 0;
-    }
+    margin-right: 4%;
+    width: 29.5%;
   }
 
   &:last-child {
     margin-right: 0;
-    @include respond-min(49.375em) {
-      display: block;
-      float: none;
-      margin: 0 auto;
-      z-index: 1;
-    }
   }
 
   h1 {
+    font-family: $sans-serif;
+    font-weight: normal;
+    color: $green;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    @extend .services-price;
+    margin-bottom: .5em;
+  }
+
+  h3 {
+    font-family: $sans-serif;
+    font-weight: bold;
+    margin-bottom: .28em;
+  }
+
+  ul {
+    list-style: none;
+    margin-bottom: 2em;
+  }
+
+  .services-title {
     border-top: 1px solid rgba($black, .3);
     color: $green;
     font-family: $sans-serif;
@@ -453,7 +495,7 @@ section, .site-header, .site-footer {
     }
   }
 
-  h2 {
+  .services-price {
     font-family: $sans-serif;
     margin-bottom: 20px;
     padding: 0 5px;
@@ -492,7 +534,22 @@ section, .site-header, .site-footer {
     &.show {
       display: block;
       margin-bottom: 1em;
-    }    
+      padding: 0 5px;
+
+      .services-title {
+        border: 0;
+        color: lighten($black, 10%);
+        padding: 10px 0 0;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      .services-price {
+        padding: 0;
+        margin-bottom: 1em;
+      }
+    }   
   }
 
   .content-extra {
@@ -517,14 +574,120 @@ section, .site-header, .site-footer {
     @include transition;
     @include respond-min(37.5em) {
       display: block;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
     }
-
-    &.hide {
-      opacity: 0;
-    }
-
   }
+}
+
+.overlay {
+  top: -10px;
+  opacity: 0;
+  @include transition((opacity 500ms, top 700ms));
+}
+
+.services-lightbox {
+  background: $white;
+  position: fixed;
+  top: -100%;
+  left: 10%;
+  overflow-y: scroll;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  @include transition((opacity 500ms, top 100ms));
+
+  .service-each {
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+    margin: 0;
+    float: none;
+
+    h1 {
+      border-top: none;
+      padding: 0;
+    }
+
+    .service-tagline {
+      display: none;
+    }
+
+    .content-extra {
+      max-height: 100%;
+    }
+
+    .learn-more {
+      display: none;
+    }
+  }
+
+  .service-block {
+    @include clearfix;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    @include respond-min(37.5em) {
+      float: left;
+      margin-top: 10px;
+      min-height: 265px;
+      padding: 0 0 20px;
+      margin-right: 5%;
+      text-align: center;
+      width: 45%;
+    }
+    @include respond-min(66em) {
+      margin-right: 4%;
+      width: 29%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .services-title {
+      border-top: 1px solid rgba($black, .3);
+      margin-bottom: .2em;
+      padding: 20px 5px 0;
+    }
+  }
+
+  .back {
+    right: 1em;
+    top: 1em;
+    z-index: 123;
+  }
+}
+
+.show-services-lightbox {
+  .overlay {
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    background: $black;
+    z-index: 13;
+  }
+
+  .services-lightbox {
+    top: 10%;
+    opacity: 1;
+    z-index: 14;
+  }
+}
+
+.service-no-float {
+  @include respond-min(49.375em) {
+    float: none;
+    width: 33%;
+    padding: 0 2% 2em;
+    display: table-cell;
+  } 
 }
 
 // ==========================================================================
@@ -819,7 +982,10 @@ html[xmlns] .slides {display: block;}
     opacity: 1;
     z-index: 9;
     @include respond-min(37.5em) {
-      top: 74px;
+      top: 109px;
+    }
+    @include respond-min(56.25em) {
+      top: 74px; 
     }
   }
 

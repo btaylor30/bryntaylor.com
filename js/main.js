@@ -78,11 +78,28 @@ function flexsliderInit(el) {
   $('.services-content-toggle').click(function (event) {
     event.preventDefault();
 
-    $(this).siblings('.services-content').toggleClass('show').toggleClass('arrow-up');
+    $(this).toggleClass('arrow-up');
+    $(this).siblings('.services-content').toggleClass('show');
+  });
+
+  $(".learn-more").click(function (event) {
+      event.preventDefault();
+      var sectionName = $(this).data('postname');
+      if( $(window).width() <= 600) {
+        $('.content-extra').removeClass('show');
+        $('.content-extra[data-postname="'+ sectionName +'"]').addClass('show');
+
+        $('.service-each[data-postname="'+ sectionName +'"]').siblings().removeClass('show-full').end().addClass('show-full');
+      } else {
+        $('.service-each[data-postname="'+ sectionName +'"]').clone().appendTo('.services-lightbox-content');
+        $('.interested').clone().appendTo('.services-lightbox-content');
+        $('body').addClass('show-services-lightbox');
+        $('.overlay').addClass('overlay-cancel');
+      } 
   });
 
     //learn more toggle
-  $('.learn-more').click(function (event) {
+  $('.learn-more-intro').click(function (event) {
     event.preventDefault();
     var sectionName = $(this).data('more');
     
@@ -95,7 +112,6 @@ function flexsliderInit(el) {
     event.preventDefault();
 
     if (player.getPlayerState() == 1) {
-      // console.log(player.getPlayerState());
       stopVideo();
     }
 
@@ -107,8 +123,16 @@ function flexsliderInit(el) {
     $('.interested').clone().appendTo('.extend-interested-block');
   }
 
+  $('body').append( "<div class='overlay'><div class='overlay-cancel back'><img src='img/button-back.png'></div></div><div class='services-lightbox'><div class='services-lightbox-content'></div></div>" );
 
 })( jQuery );//end
+
+$('.overlay').click(function (event) {
+  event.preventDefault();
+  $('body').removeClass('show-services-lightbox');
+  $('.services-lightbox-content').empty();
+  $('.overlay').removeClass('overlay-cancel');
+});
 
 $(window).load(function() {
   winWidth = $(window).width();

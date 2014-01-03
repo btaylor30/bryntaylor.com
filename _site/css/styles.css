@@ -80,7 +80,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  margin: 1em 0;
+  margin: .5em 0 1.5em;
   padding: 0; }
 
 input, select {
@@ -1549,21 +1549,43 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 52em) {
       .home-intro__content p {
         padding: 0; } }
-  .home-intro__content a, .home-intro__content .learn-more {
+  .home-intro__content a, .home-intro__content .learn-more, .home-intro__content .learn-more-intro {
     color: #333333;
     cursor: pointer;
     text-decoration: underline;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     font-size: .8em; }
     @media screen and (min-width: 52em) {
-      .home-intro__content a, .home-intro__content .learn-more {
+      .home-intro__content a, .home-intro__content .learn-more, .home-intro__content .learn-more-intro {
         color: white; } }
-    .home-intro__content a.hide, .home-intro__content .learn-more.hide {
+    .home-intro__content a.hide, .home-intro__content .learn-more.hide, .home-intro__content .learn-more-intro.hide {
       display: none; }
   .home-intro__content .content-extra {
     display: none; }
     .home-intro__content .content-extra.show {
       display: inline; }
+
+.book-callout {
+  margin-top: 20px;
+  padding: 0 5px; }
+  @media screen and (min-width: 52em) {
+    .book-callout {
+      bottom: 2em;
+      color: white;
+      background: rgba(0, 0, 0, 0.2);
+      margin-top: 0;
+      max-width: 300px;
+      padding: 30px 30px 10px 40px;
+      position: absolute;
+      right: 2em;
+      text-align: center;
+      width: 30%; } }
+  .book-callout h1 {
+    margin-bottom: .75em;
+    font-size: 1.5em; }
+  @media screen and (min-width: 52em) {
+    .book-callout a {
+      color: white; } }
 
 .services {
   *zoom: 1;
@@ -1585,10 +1607,24 @@ section, .site-header, .site-footer {
         margin-bottom: 1.5em;
         padding: 0; } }
 
+.services-row {
+  *zoom: 1;
+  margin-bottom: 2em; }
+  .services-row:before {
+    content: "";
+    display: table; }
+  .services-row:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 49.375em) {
+    .services-row.col-2 {
+      text-align: center;
+      display: table-row; } }
+
 .service-each {
   *zoom: 1;
   display: inline-block;
-  float: left;
   padding: 0;
   position: relative;
   text-align: left;
@@ -1603,31 +1639,32 @@ section, .site-header, .site-footer {
     clear: both; }
   @media screen and (min-width: 37.5em) {
     .service-each {
+      float: left;
       padding: 0 0 30px;
-      margin-right: 60px;
+      margin-right: 5%;
       text-align: center;
-      width: 44%; } }
+      width: 45%; } }
   @media screen and (min-width: 49.375em) {
     .service-each {
-      width: 28%; } }
-  @media screen and (min-width: 37.5em) {
-    .service-each:nth-child(2n + 1) {
-      margin-right: 0; } }
-  @media screen and (min-width: 49.375em) {
-    .service-each:nth-child(2n + 1) {
-      margin-right: 60px; } }
-  @media screen and (min-width: 49.375em) {
-    .service-each:nth-child(3n + 1) {
-      margin-right: 0; } }
+      margin-right: 4%;
+      width: 29.5%; } }
   .service-each:last-child {
     margin-right: 0; }
-    @media screen and (min-width: 49.375em) {
-      .service-each:last-child {
-        display: block;
-        float: none;
-        margin: 0 auto;
-        z-index: 1; } }
   .service-each h1 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #00886b;
+    margin-bottom: 1em; }
+  .service-each h2 {
+    margin-bottom: .5em; }
+  .service-each h3 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: .28em; }
+  .service-each ul {
+    list-style: none;
+    margin-bottom: 2em; }
+  .service-each .services-title {
     border-top: 1px solid rgba(51, 51, 51, 0.3);
     color: #00886b;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
@@ -1637,17 +1674,17 @@ section, .site-header, .site-footer {
     padding: 20px 5px 0;
     text-transform: uppercase; }
     @media screen and (min-width: 37.5em) {
-      .service-each h1 {
+      .service-each .services-title {
         padding: 30px 0 0; } }
-  .service-each h2 {
+  .service-each .services-price, .service-each h2 {
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
     padding: 0 5px; }
     @media screen and (min-width: 37.5em) {
-      .service-each h2 {
+      .service-each .services-price, .service-each h2 {
         margin-bottom: 1.8em;
         padding: 0; } }
-    .service-each h2 span {
+    .service-each .services-price span, .service-each h2 span {
       font-size: 12px; }
   .service-each .services-content-toggle {
     background: url(../img/arrow-down.png) 95% 30px no-repeat;
@@ -1669,7 +1706,18 @@ section, .site-header, .site-footer {
         margin-bottom: 0; } }
     .service-each .services-content.show {
       display: block;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      padding: 0 5px; }
+      .service-each .services-content.show .services-title {
+        border: 0;
+        color: #4d4d4d;
+        padding: 10px 0 0;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: none; }
+      .service-each .services-content.show .services-price, .service-each .services-content.show h2 {
+        padding: 0;
+        margin-bottom: 1em; }
   .service-each .content-extra {
     display: inline-block;
     overflow: hidden;
@@ -1698,9 +1746,106 @@ section, .site-header, .site-footer {
     @media screen and (min-width: 37.5em) {
       .service-each .learn-more {
         display: block;
-        margin-bottom: 80px; } }
-    .service-each .learn-more.hide {
-      opacity: 0; }
+        margin-bottom: 20px; } }
+
+.overlay {
+  top: -10px;
+  opacity: 0;
+  -moz-transition: opacity 500ms, top 700ms;
+  -ms-transition: opacity 500ms, top 700ms;
+  -o-transition: opacity 500ms, top 700ms;
+  -webkit-transition: opacity 500ms, top 700ms;
+  transition: opacity 500ms, top 700ms; }
+
+.services-lightbox {
+  background: white;
+  position: fixed;
+  top: -100%;
+  left: 10%;
+  overflow-y: scroll;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  -moz-transition: opacity 500ms, top 100ms;
+  -ms-transition: opacity 500ms, top 100ms;
+  -o-transition: opacity 500ms, top 100ms;
+  -webkit-transition: opacity 500ms, top 100ms;
+  transition: opacity 500ms, top 100ms; }
+  .services-lightbox .service-each {
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+    margin: 0;
+    float: none; }
+    .services-lightbox .service-each h1 {
+      border-top: none;
+      padding: 0; }
+    .services-lightbox .service-each .service-tagline {
+      display: none; }
+    .services-lightbox .service-each .content-extra {
+      max-height: 100%; }
+    .services-lightbox .service-each .learn-more {
+      display: none; }
+  .services-lightbox .service-block {
+    *zoom: 1;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2; }
+    .services-lightbox .service-block:before {
+      content: "";
+      display: table; }
+    .services-lightbox .service-block:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media screen and (min-width: 37.5em) {
+      .services-lightbox .service-block {
+        float: left;
+        margin-top: 10px;
+        min-height: 265px;
+        padding: 0 0 20px;
+        margin-right: 5%;
+        text-align: center;
+        width: 45%; } }
+    @media screen and (min-width: 66em) {
+      .services-lightbox .service-block {
+        margin-right: 4%;
+        width: 29%; } }
+    .services-lightbox .service-block:last-child {
+      margin-right: 0; }
+    .services-lightbox .service-block .services-title {
+      border-top: 1px solid rgba(51, 51, 51, 0.3);
+      margin-bottom: .2em;
+      padding: 20px 5px 0; }
+  .services-lightbox .back {
+    right: 1em;
+    top: 1em;
+    z-index: 123; }
+
+.show-services-lightbox .overlay {
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  background: #333333;
+  z-index: 13; }
+.show-services-lightbox .services-lightbox {
+  top: 10%;
+  opacity: 1;
+  z-index: 14; }
+
+@media screen and (min-width: 49.375em) {
+  .service-no-float {
+    float: none;
+    width: 33%;
+    padding: 0 2% 2em;
+    display: table-cell; } }
 
 .interested {
   text-align: center;
@@ -2078,6 +2223,9 @@ html[xmlns] .slides {
     opacity: 1;
     z-index: 9; }
     @media screen and (min-width: 37.5em) {
+      .show-contact .contact {
+        top: 109px; } }
+    @media screen and (min-width: 56.25em) {
       .show-contact .contact {
         top: 74px; } }
   .contact a {

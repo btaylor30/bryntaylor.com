@@ -80,7 +80,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
-  margin: 1em 0;
+  margin: .5em 0 1.5em;
   padding: 0; }
 
 input, select {
@@ -1491,18 +1491,25 @@ section, .site-header, .site-footer {
   .home-intro__content p {
     margin-bottom: 1.2em;
     padding: 0 5px; }
-  .home-intro__content a, .home-intro__content .learn-more {
+  .home-intro__content a, .home-intro__content .learn-more, .home-intro__content .learn-more-intro {
     color: #333333;
     cursor: pointer;
     text-decoration: underline;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     font-size: .8em; }
-    .home-intro__content a.hide, .home-intro__content .learn-more.hide {
+    .home-intro__content a.hide, .home-intro__content .learn-more.hide, .home-intro__content .learn-more-intro.hide {
       display: none; }
   .home-intro__content .content-extra {
     display: none; }
     .home-intro__content .content-extra.show {
       display: inline; }
+
+.book-callout {
+  margin-top: 20px;
+  padding: 0 5px; }
+  .book-callout h1 {
+    margin-bottom: .75em;
+    font-size: 1.5em; }
 
 .services {
   *zoom: 1;
@@ -1520,19 +1527,30 @@ section, .site-header, .site-footer {
     margin-bottom: 1.5em;
     padding: 0; }
 
+.services-row {
+  *zoom: 1;
+  margin-bottom: 2em; }
+  .services-row:before {
+    content: "";
+    display: table; }
+  .services-row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .service-each {
   *zoom: 1;
   display: inline-block;
-  float: left;
   padding: 0;
   position: relative;
   text-align: left;
   width: 100%;
   z-index: 2;
+  float: left;
   padding: 0 0 30px;
-  margin-right: 60px;
+  margin-right: 5%;
   text-align: center;
-  width: 44%; }
+  width: 45%; }
   .service-each:before {
     content: "";
     display: table; }
@@ -1540,11 +1558,23 @@ section, .site-header, .site-footer {
     content: "";
     display: table;
     clear: both; }
-  .service-each:nth-child(2n + 1) {
-    margin-right: 0; }
   .service-each:last-child {
     margin-right: 0; }
   .service-each h1 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #00886b;
+    margin-bottom: 1em; }
+  .service-each h2 {
+    margin-bottom: .5em; }
+  .service-each h3 {
+    font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: .28em; }
+  .service-each ul {
+    list-style: none;
+    margin-bottom: 2em; }
+  .service-each .services-title {
     border-top: 1px solid rgba(51, 51, 51, 0.3);
     color: #00886b;
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
@@ -1554,13 +1584,13 @@ section, .site-header, .site-footer {
     padding: 20px 5px 0;
     text-transform: uppercase;
     padding: 30px 0 0; }
-  .service-each h2 {
+  .service-each .services-price, .service-each h2 {
     font-family: "Gotham Rounded A", "Gotham Rounded B", Helvetica, Arial, sans-serif;
     margin-bottom: 20px;
     padding: 0 5px;
     margin-bottom: 1.8em;
     padding: 0; }
-    .service-each h2 span {
+    .service-each .services-price span, .service-each h2 span {
       font-size: 12px; }
   .service-each .services-content-toggle {
     background: url(../img/arrow-down.png) 95% 30px no-repeat;
@@ -1576,7 +1606,18 @@ section, .site-header, .site-footer {
     margin-bottom: 0; }
     .service-each .services-content.show {
       display: block;
-      margin-bottom: 1em; }
+      margin-bottom: 1em;
+      padding: 0 5px; }
+      .service-each .services-content.show .services-title {
+        border: 0;
+        color: #4d4d4d;
+        padding: 10px 0 0;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: none; }
+      .service-each .services-content.show .services-price, .service-each .services-content.show h2 {
+        padding: 0;
+        margin-bottom: 1em; }
   .service-each .content-extra {
     display: inline-block;
     overflow: hidden;
@@ -1601,9 +1642,93 @@ section, .site-header, .site-footer {
     -webkit-transition: all 150ms cubic-bezier(0.2, 0.02, 0.02, 0.97);
     transition: all 150ms cubic-bezier(0.2, 0.02, 0.02, 0.97);
     display: block;
-    margin-bottom: 80px; }
-    .service-each .learn-more.hide {
-      opacity: 0; }
+    margin-bottom: 20px; }
+
+.overlay {
+  top: -10px;
+  opacity: 0;
+  -moz-transition: opacity 500ms, top 700ms;
+  -ms-transition: opacity 500ms, top 700ms;
+  -o-transition: opacity 500ms, top 700ms;
+  -webkit-transition: opacity 500ms, top 700ms;
+  transition: opacity 500ms, top 700ms; }
+
+.services-lightbox {
+  background: white;
+  position: fixed;
+  top: -100%;
+  left: 10%;
+  overflow-y: scroll;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  -moz-transition: opacity 500ms, top 100ms;
+  -ms-transition: opacity 500ms, top 100ms;
+  -o-transition: opacity 500ms, top 100ms;
+  -webkit-transition: opacity 500ms, top 100ms;
+  transition: opacity 500ms, top 100ms; }
+  .services-lightbox .service-each {
+    width: 100%;
+    padding: 1em;
+    text-align: left;
+    margin: 0;
+    float: none; }
+    .services-lightbox .service-each h1 {
+      border-top: none;
+      padding: 0; }
+    .services-lightbox .service-each .service-tagline {
+      display: none; }
+    .services-lightbox .service-each .content-extra {
+      max-height: 100%; }
+    .services-lightbox .service-each .learn-more {
+      display: none; }
+  .services-lightbox .service-block {
+    *zoom: 1;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+    float: left;
+    margin-top: 10px;
+    min-height: 265px;
+    padding: 0 0 20px;
+    margin-right: 5%;
+    text-align: center;
+    width: 45%; }
+    .services-lightbox .service-block:before {
+      content: "";
+      display: table; }
+    .services-lightbox .service-block:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .services-lightbox .service-block:last-child {
+      margin-right: 0; }
+    .services-lightbox .service-block .services-title {
+      border-top: 1px solid rgba(51, 51, 51, 0.3);
+      margin-bottom: .2em;
+      padding: 20px 5px 0; }
+  .services-lightbox .back {
+    right: 1em;
+    top: 1em;
+    z-index: 123; }
+
+.show-services-lightbox .overlay {
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .8;
+  background: #333333;
+  z-index: 13; }
+.show-services-lightbox .services-lightbox {
+  top: 10%;
+  opacity: 1;
+  z-index: 14; }
 
 .interested {
   text-align: center;
@@ -1931,7 +2056,7 @@ html[xmlns] .slides {
     top: 50px;
     opacity: 1;
     z-index: 9;
-    top: 74px; }
+    top: 109px; }
   .contact a {
     color: white; }
 
