@@ -1022,7 +1022,7 @@ html[xmlns] .slides {display: block;}
 
 .video-container {
   background: rgba($black, .75);
-  height: 100%;
+  max-height: 0;
   left: 0;
   opacity: 0;
   padding: 0 5%;
@@ -1030,12 +1030,14 @@ html[xmlns] .slides {display: block;}
   top: -10px;
   width: 100%;
   z-index: 1;
-  @include transition((opacity 500ms, top 700ms));
+  @include transition((opacity 500ms, top 200ms));
   @include respond-min(50em) {
       padding: 0 20%;
     }
 
   &.show {
+    max-height: 100em;
+    height: 100%;
     opacity: 1;
     top: 0;
     z-index: 12;
