@@ -22,7 +22,7 @@ Before you even set foot in the store, I will be at work for you selecting piece
 An entire session devoted to combining your new purchases with your current wardrobe to create new outfits for every facet of your life.
  
 - ### Photo Lookbook
-You'll receive a personalized look book that features high-res photos of your new ensembles.
+You'll receive a personalized lookbook that features high-res photos of your new ensembles.
 
 ***
  
