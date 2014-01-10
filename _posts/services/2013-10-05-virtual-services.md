@@ -5,7 +5,7 @@ price: $245
 categories: services other
 name: "virtual-services"
 published: true
-tagline: You can still benefit from my expertise from the comforts of your own home.
+tagline: "Benefit from a pro stylist's expertise from the comforts of your own home."
 ---
 
 Don't live in New York or San Francisco? You can still benefit from my expertise from the comforts of your own home. Choose from one of my two remote styling options below.
