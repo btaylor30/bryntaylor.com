@@ -5,7 +5,7 @@ price: $445
 categories: services top
 name: "closet-refresh"
 published: true
-tagline: Cut through the clutter and see all the hidden potential your wardrobe has to offer. 
+tagline: Cut through the clutter and see all the hidden potential your wardrobe has to offer.
 ---
 
 Ever feel like you have a closet full of nothing to wear? Do you wonder if your clothes are even that flattering? The Closet Refresh will teach you how to spot what is and is not working for you, and how to use what you have to create a more exciting wardrobe. Learn what silhouettes, styles, and colors suit you best, and how to confidently mix and match your clothes to create incredible new looks.
@@ -19,7 +19,7 @@ We will go through your wardrobe piece by piece and discuss which clothes flatte
 I’ll put together new outfits from the pieces already in your closet.
  
 - ### Photo Lookbook
-You'll receive a personalized look book that features high-res photos of all your new ensembles. 
+You'll receive a personalized lookbook that features high-res photos of all your new ensembles. 
 
 ***
  
